@@ -1,5 +1,5 @@
 import React from 'react';
-import Filter from './Filter.js'
+import Filter from '../Filter';
 
 function Header() {
   return (

@@ -3,7 +3,7 @@ import React from 'react';
 import './assets/styles/styles.css';
 
 //import components
-import Header from './components/Header.js';
+import Header from './components/Header';
 
 function App() {
   return (
