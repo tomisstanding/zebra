@@ -25,12 +25,16 @@ const handleAccordion = () => {
               {tagline ? <h3 className="carrier-tagline" data-testid="carrier-tagline">{tagline}</h3> : ''}
               <div
                 className="row icons-wrapper">
-                <div className="rating">
-                  {Array.from({ length: rating}).map((data, key) => <Rating key={key}/>)}
-                </div>
-                <div className="icons">
-                  {icons && icons.map((icon, key) => (<SVG key={key} width="20" height="20" src={require(`../../assets/images/${icon.icon}.svg`)} />))}
-                </div>
+                { rating &&
+                  <div className="rating">
+                    {Array.from({ length: rating}).map((data, key) => <Rating key={key}/>)}
+                  </div>
+                }
+                { icons &&
+                  <div className="icons">
+                    {icons && icons.map((icon, key) => (<SVG key={key} width="20" height="20" src={require(`../../assets/images/${icon.icon}.svg`)} />))}
+                  </div>
+                }
               </div>
             </div>
           </div>
@@ -56,13 +60,19 @@ const handleAccordion = () => {
           data-testid="insurance-body"
         >
             <section className="col">
-              <h1>Features</h1>
+              <div className="row">
+                <SVG width="20" height="20" src={require('../../assets/images/IconFeatures.svg')} />
+                <h1>Features</h1>
+              </div>
               <hr></hr>
               { features ? <section className="features" dangerouslySetInnerHTML={{__html: features}}></section> : <p>No features found at this time</p>}
             </section>
 
             <section className="col">
-              <h1>{`Why ${name}?`}</h1>
+              <div className="row">
+                <SVG width="20" height="20" src={require('../../assets/images/IconDetails.svg')} />
+                <h1>{`Why ${name}?`}</h1>
+              </div>
               <hr></hr>
               { details ? <p>{details}</p> : <p>No details from carrier found at this time</p> }
               <p><i>{disclaimer}</i></p>

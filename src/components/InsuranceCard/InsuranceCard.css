@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.insurance-card:hover {
+  box-shadow: 0px 3px 11px #AEAEAE;
+}
+
 .price-wrapper {
   align-items: center;
 }
@@ -18,7 +22,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 30vh;
+  max-height: 200px;
 }
 
 .card-wrapper .row {
@@ -118,7 +123,9 @@
 .insurance-body.open {
   max-height: 500px;
 }
-
+.insurance-body ul li{
+  margin: 5px auto;
+}
 .insurance-body ul li,
 .insurance-body p {
   font-size: 12px;
@@ -137,6 +144,16 @@
   width: 50%;
   font-size: 14px;
   margin: 0 15px;
+  align-items: center;
+}
+
+.insurance-body svg {
+    margin-right: 5px;
+}
+
+.insurance-body svg g {
+  fill: #959595;
+  stroke: #959595;
 }
 
 .insurance-body .col {
@@ -174,4 +191,47 @@
   border-left-color: #5c6cff;
   border-top-color: #5c6cff;
   border-radius: 5px 0 0 0;
+}
+
+@media only screen and (max-width: 425px) {
+
+  .header {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .header label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .insurance-card {
+    padding: 10px 0;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-wrapper .col.price-wrapper {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .card-wrapper .icons-wrapper {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .orange-button,
+  .blue-button {
+    height: 40px;
+    width: 110px;
+    flex-direction: column-reverse;
+  }
+
 }
