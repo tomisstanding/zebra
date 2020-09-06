@@ -5,14 +5,14 @@ Author: Thomas Standing
 
 ## General Approach
 
-● Use the provided carrier_cards.json as the payload from a mock API request to populate the page with insurance carrier cards. 
-● Each carrier card should expand and contract smoothly when clicked to display additional information from the detail_body and features_html nodes in carrier_cards.json. (In the mockup, Liberty Mutual is expanded, the others are not.) 
-● Cards with type 0 or 1 should have a blue button, cards with type 3 should have an orange button, cards with type 2 should have no button. Clicking the button should open a new tab with the address being the action.link of the card in carrier_cards.json. 
-● Feature icons below the carrier name (next to the stars) are listed in the features node with the name of the icon. (The features list in the details section is from the features_html node.) 
-● Carrier logos are not included, just use logo-carrier-sm-default.png from the assets folder as a placeholder. 
-● Thoroughly unit test one of your components. (We’d rather see full coverage of one component than partial coverage of multiple.) 
-● You will not use all the fields in carrier_cards.json. 
-● Optional: Implement a sorter: by price, rating (stars), and alphabetical. (note: sorting of cards does not need to be animated) 
+* Use the provided carrier_cards.json as the payload from a mock API request to populate the page with insurance carrier cards. 
+* Each carrier card should expand and contract smoothly when clicked to display additional information from the detail_body and features_html nodes in carrier_cards.json. (In the mockup, Liberty Mutual is expanded, the others are not.) 
+* Cards with type 0 or 1 should have a blue button, cards with type 3 should have an orange button, cards with type 2 should have no button. Clicking the button should open a new tab with the address being the action.link of the card in carrier_cards.json. 
+* Feature icons below the carrier name (next to the stars) are listed in the features node with the name of the icon. (The features list in the details section is from the features_html node.) 
+* Carrier logos are not included, just use logo-carrier-sm-default.png from the assets folder as a placeholder. 
+* Thoroughly unit test one of your components. (We’d rather see full coverage of one component than partial coverage of multiple.) 
+* You will not use all the fields in carrier_cards.json. 
+* Optional: Implement a sorter: by price, rating (stars), and alphabetical. (note: sorting of cards does not need to be animated) 
 
 ## Available Scripts
 
