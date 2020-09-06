@@ -1,0 +1,24 @@
+/*
+    Price Styles
+*/
+
+.carrier-price {
+  display: flex;
+  align-items: center;
+}
+
+.carrier-price .verified {
+  color: #5c6cff;
+  font-size: 12px;
+}
+
+.carrier-price h1 {
+  font-weight: 100;
+}
+
+.carrier-price span {
+  color: #959595;
+  font-size: 14px;
+  margin-right: 10px;
+  font-weight: bold;
+}

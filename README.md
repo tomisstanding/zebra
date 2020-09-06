@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Zebra Developer Test
+Author: Thomas Standing
+
+## General Approach
+
+● Use the provided carrier_cards.json as the payload from a mock API request to populate the page with insurance carrier cards. 
+● Each carrier card should expand and contract smoothly when clicked to display additional information from the detail_body and features_html nodes in carrier_cards.json. (In the mockup, Liberty Mutual is expanded, the others are not.) 
+● Cards with type 0 or 1 should have a blue button, cards with type 3 should have an orange button, cards with type 2 should have no button. Clicking the button should open a new tab with the address being the action.link of the card in carrier_cards.json. 
+● Feature icons below the carrier name (next to the stars) are listed in the features node with the name of the icon. (The features list in the details section is from the features_html node.) 
+● Carrier logos are not included, just use logo-carrier-sm-default.png from the assets folder as a placeholder. 
+● Thoroughly unit test one of your components. (We’d rather see full coverage of one component than partial coverage of multiple.) 
+● You will not use all the fields in carrier_cards.json. 
+● Optional: Implement a sorter: by price, rating (stars), and alphabetical. (note: sorting of cards does not need to be animated) 
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -27,42 +41,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Credits 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Thanks to the react inline svg team https://github.com/gilbarbara/react-inlinesvg. This was the first time working with a large amount of svg, and this package made it possible.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

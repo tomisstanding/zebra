@@ -1,0 +1,177 @@
+/*
+  Insurance Card Styles
+*/
+
+.insurance-card {
+  border: 1px solid #EAEAEA;
+  margin: 25px 0;
+  border-radius: 5px;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.price-wrapper {
+  align-items: center;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.card-wrapper .row {
+  width: 65%;
+}
+
+.card-wrapper .col {
+  margin-left: 20px;
+}
+
+.down-chevron,
+.up-chevron {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.up-chevron {
+  transform: rotate(180deg);
+}
+
+.carrier-name {
+  font-size: 16px;
+}
+
+.carrier-tagline {
+  color: #959595;
+  font-size: 12px;
+}
+
+.insurance-card svg g {
+  fill: #FFF;
+  stroke: #FFF;
+}
+
+.card-wrapper .icons-wrapper {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons-wrapper .rating {
+  margin-right: 10px;
+}
+
+.insurance-card .icons {
+  align-items: center;
+}
+
+.blue-button {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: linear-gradient(350deg, #6169f4 40%, #1cbeec 85%);
+}
+
+.orange-button {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: linear-gradient(350deg, #f87000 40%, #f8ae00 85%);
+}
+
+.blue-carrier-button svg,
+.yellow-carrier-button svg,
+.blue-button span,
+.orange-button span {
+  margin: 0 5px;
+}
+
+.insurance-body {
+  display: flex;
+  color: #959595;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 400ms ease;
+}
+
+.features {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.insurance-body.open {
+  max-height: 500px;
+}
+
+.insurance-body ul li,
+.insurance-body p {
+  font-size: 12px;
+}
+
+.insurance-body i {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.insurance-body .open {
+  max-height: 500px;
+}
+
+.insurance-body div {
+  width: 50%;
+  font-size: 14px;
+  margin: 0 15px;
+}
+
+.insurance-body .col {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.insurance-body h1 {
+  font-size: 14px;
+}
+
+#box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+
+#box svg {
+  position: absolute;
+}
+
+#box::before,
+#box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#box::before {
+  border-width: 20px;
+  border-left-color: #5c6cff;
+  border-top-color: #5c6cff;
+  border-radius: 5px 0 0 0;
+}
