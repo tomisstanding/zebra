@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import InsuranceCard from './InsuranceCard';
+import InsuranceCard from '../InsuranceCard/InsuranceCard';
 import { insuranceData } from '../../assets/data';
 
 describe('InsuranceCard',  () => {
