@@ -41,12 +41,12 @@ const handleAccordion = () => {
           <div className="col price-wrapper">
             <Price tag={tag} rate={rate}/>
             {type === 0 || type === 1
-              ? (<a className="blue-button" href={link} data-testid="blue-button">
+              ? (<a className="blue-button" target="_blank" rel='noopener noreferrer' href={link} data-testid="blue-button">
                   <SVG width="15" height="15" src={require('../../assets/images/IconArrowDown.svg')} />
                   <span>Get Quote</span>
                 </a>)
               : type === 3
-                ? (<a className="orange-button" href={link} data-testid="orange-button">
+                ? (<a className="orange-button" target="_blank" rel='noopener noreferrer'href={link} data-testid="orange-button">
                     <SVG width="15" height="15" src={require('../../assets/images/IconBoltWhite.svg')} />
                     <span>Buy Now</span>
                   </a>)
